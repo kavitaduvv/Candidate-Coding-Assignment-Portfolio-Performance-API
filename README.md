@@ -37,6 +37,7 @@ Validations:
 
 name: Required, max 100 characters
 
+
 📁 Asset API
 ➤ GET /api/portfolios/{portfolioId}/assets
 Returns assets in a portfolio.
