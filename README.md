@@ -23,7 +23,6 @@ http://localhost:5000/api/
 ## 📁 Portfolio API
 
 ### ➤ `GET /api/portfolios`
-
 Returns all portfolios.
 [
   {
@@ -33,11 +32,17 @@ Returns all portfolios.
 ]
 
 ### ➤ `POST /api/portfolios`
-
+Create a new portfolio.
+Request Body
 {
-  "symbol": "AAPL",
-  "type": "Stock"
+  "name": "Retirement Portfolio"
 }
+Response
+{
+  "id": 2,
+  "name": "Retirement Portfolio"
+}
+
 
 ## 📁 Asset API
 ### ➤ GET /api/portfolios/{portfolioId}/assets
