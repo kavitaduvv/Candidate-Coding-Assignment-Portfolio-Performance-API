@@ -33,7 +33,7 @@ Returns all portfolios.
 {
   "name": "My Portfolio"
 }
-Validations:
+
 
 name: Required, max 100 characters
 
@@ -48,7 +48,7 @@ json
   "symbol": "AAPL",
   "type": "Stock"
 }
-Validations:
+
 
 symbol: Required, max 10 characters
 
