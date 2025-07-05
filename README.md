@@ -101,7 +101,7 @@ Add a transaction to an asset.
   "quantity": 5,
   "price": 180.25
 }
-Validations:
+### Validations:
 date: required
 quantity: between -1,000,000 and +1,000,000
 price: must be > 0
@@ -128,7 +128,7 @@ Calculates gain/loss and total value.
     }
   ]
 }
-❗ Validation Errors
+### ❗ Validation Errors
 On invalid input (e.g. missing name, too long symbol), the API responds with:
 {
   "errors": {
