@@ -28,12 +28,11 @@ Returns all portfolios.
 
 ### ➤ `POST /api/portfolios`
 
-**Body:**
-```json
+json
 {
   "name": "My Portfolio"
 }
-📁 Asset API
+## 📁 Asset API
 ➤ GET /api/portfolios/{portfolioId}/assets
 Returns assets in a portfolio.
 
