@@ -35,9 +35,6 @@ Returns all portfolios.
 }
 
 
-name: Required, max 100 characters
-
-
 📁 Asset API
 ➤ GET /api/portfolios/{portfolioId}/assets
 Returns assets in a portfolio.
@@ -49,23 +46,11 @@ json
   "type": "Stock"
 }
 
-
-symbol: Required, max 10 characters
-
-type: Required, max 50 characters
-
 📈 Performance API
 ➤ GET /api/portfolios/{portfolioId}/performance
 With query params:
 ?startDate=2024-01-01&endDate=2024-07-01
 Returns portfolio valuation, realized/unrealized gains, and asset breakdown.
-
-❗ Validation Errors
-{
-  "errors": {
-    "Symbol": ["Symbol is required and cannot exceed 10 characters."]
-  }
-}
 
 🛠️ Developer Notes
 🌐 Swagger UI: http://localhost:5000/swagger
