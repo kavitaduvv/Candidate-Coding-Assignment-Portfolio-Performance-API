@@ -28,10 +28,11 @@ Returns all portfolios.
 
 ### ➤ `POST /api/portfolios`
 
-json
 {
-  "name": "My Portfolio"
+  "symbol": "AAPL",
+  "type": "Stock"
 }
+
 ## 📁 Asset API
 ### ➤ GET /api/portfolios/{portfolioId}/assets
 Returns assets in a portfolio.
@@ -66,8 +67,7 @@ Entity Framework Core (SQLite/InMemory)
 xUnit for testing
 
 Swagger for docs
-
-##📁 Project Structure
+## 📁 Project Structure
 PortfolioAPI_NoDTO/
 │
 ├── Controllers/
@@ -77,4 +77,6 @@ PortfolioAPI_NoDTO/
 ├── AppDbContext.cs
 ├── SampleDataSeeder.cs
 ├── README.md
+
+
 
