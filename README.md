@@ -193,13 +193,13 @@ On invalid input (e.g. missing name, too long symbol), the API responds with:
 ```
 ## How to Run Locally
 ## Inside the root folder:
-# dotnet restore
-# dotnet build
-# dotnet run --project PortfolioAPI_NoDTO
+#### dotnet restore
+#### dotnet build
+#### dotnet run --project PortfolioAPI_NoDTO
 
-# Then open http://localhost:5000/swagger
+#### Then open http://localhost:5000/swagger
 ## To run tests:
-# dotnet test PortfolioAPI_NoDTO.Tests
+#### dotnet test PortfolioAPI_NoDTO.Tests
 
 ---
 
