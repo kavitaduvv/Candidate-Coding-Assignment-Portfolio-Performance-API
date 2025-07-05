@@ -44,8 +44,8 @@ json
   "type": "Stock"
 }
 
-📈 Performance API
-➤ GET /api/portfolios/{portfolioId}/performance
+## 📁  Performance API
+### ➤ GET /api/portfolios/{portfolioId}/performance
 With query params:
 ?startDate=2024-01-01&endDate=2024-07-01
 Returns portfolio valuation, realized/unrealized gains, and asset breakdown.
@@ -56,18 +56,15 @@ Returns portfolio valuation, realized/unrealized gains, and asset breakdown.
 💾 Database: SQLite portfolio.db
 
 📦 Testable via dotnet test
-
 🧪 Unit test coverage for all controllers & validation
-
 📦 Tech Stack
 ASP.NET Core 8.0
-
 Entity Framework Core (SQLite/InMemory)
-
 xUnit for testing
 
 Swagger for docs
 ## 📁 Project Structure
+
 PortfolioAPI_NoDTO/
 │
 ├── Controllers/
