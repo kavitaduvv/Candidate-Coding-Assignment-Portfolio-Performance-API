@@ -33,8 +33,6 @@ Returns all portfolios.
 {
   "name": "My Portfolio"
 }
-
-
 📁 Asset API
 ➤ GET /api/portfolios/{portfolioId}/assets
 Returns assets in a portfolio.
