@@ -33,10 +33,10 @@ json
   "name": "My Portfolio"
 }
 ## 📁 Asset API
-➤ GET /api/portfolios/{portfolioId}/assets
+### ➤ GET /api/portfolios/{portfolioId}/assets
 Returns assets in a portfolio.
 
-➤ POST /api/portfolios/{portfolioId}/assets
+### ➤ POST /api/portfolios/{portfolioId}/assets
 json
 {
   "symbol": "AAPL",
@@ -67,7 +67,7 @@ xUnit for testing
 
 Swagger for docs
 
-📁 Project Structure
+##📁 Project Structure
 PortfolioAPI_NoDTO/
 │
 ├── Controllers/
