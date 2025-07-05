@@ -25,6 +25,12 @@ http://localhost:5000/api/
 ### ➤ `GET /api/portfolios`
 
 Returns all portfolios.
+[
+  {
+    "id": 1,
+    "name": "Growth Portfolio"
+  }
+]
 
 ### ➤ `POST /api/portfolios`
 
@@ -59,12 +65,11 @@ Returns portfolio valuation, realized/unrealized gains, and asset breakdown.
 ### ASP.NET Core 8.0
 ### Entity Framework Core (SQLite/InMemory)
 ### xUnit for testing
-
-Swagger for docs
+### Swagger for docs
 ## 📁 Project Structure
 
 ### PortfolioAPI_NoDTO/
-### │
+
 ### ├── Controllers/
 ### ├── Models/
 ### ├── PortfolioAPI_NoDTO.csproj
