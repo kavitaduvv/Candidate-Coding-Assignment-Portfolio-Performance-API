@@ -31,7 +31,7 @@ http://localhost:5000/api/
 
 ### GET `/api/portfolios`
 Returns a list of portfolios.
-**Response:**
+#### **Response:**
 ```json
 [
   {
@@ -43,17 +43,17 @@ Returns a list of portfolios.
 
 ### POST `/api/portfolios`
 Create a new portfolio.
-**Request Body:**
+#### **Request Body:**
 ```json
 {
   "name": "Retirement Portfolio"
 }
 ```
 
-**Validations:**
+#### **Validations:**
 - `name`: required, max 100 characters
 
-**Response:**
+#### **Response:**
 ```json
 {
   "id": 2,
@@ -67,7 +67,7 @@ Create a new portfolio.
 
 ### GET `/api/portfolios/{portfolioId}/assets`
 Returns all assets in a portfolio.
-**Response:**
+#### **Response:**
 ```json
 [
   {
@@ -80,7 +80,7 @@ Returns all assets in a portfolio.
 
 ### POST `/api/portfolios/{portfolioId}/assets`
 Add an asset to a portfolio.
-**Request Body:**
+#### **Request Body:**
 ```json
 {
   "symbol": "TSLA",
@@ -88,11 +88,11 @@ Add an asset to a portfolio.
 }
 ```
 
-**Validations:**
+#### **Validations:**
 - `symbol`: required, max 10 characters
 - `type`: required, max 50 characters
 
-**Response:** 200 ok
+#### **Response:** 200 OK
 ```json
 {
   "id": 2,
@@ -105,7 +105,7 @@ Add an asset to a portfolio.
 ### PUT `/api/portfolios/{portfolioId}/assets/{id}`
 
 Update asset.
-Request Body:
+#### Request Body:
 {
   "symbol": "TSLA",
   "type": "Equity"
@@ -113,16 +113,15 @@ Request Body:
 
 
 ### DELETE `/api/portfolios/{portfolioId}/assets/{id}`
-
 Deletes asset.
-Response: 204 No Content
+#### Response: 204 No Content
 ---
 
 ## 📁 Transaction API
 
 ### GET `/api/assets/{assetId}/transactions`
 Returns transactions for an asset.
-**Response:**
+#### **Response:**
 ```json
 [
   {
@@ -137,7 +136,7 @@ Returns transactions for an asset.
 
 ### POST `/api/assets/{assetId}/transactions`
 Add a transaction to an asset.
-**Request Body:**
+#### **Request Body:**
 ```json
 {
   "date": "2024-07-05",
@@ -146,7 +145,7 @@ Add a transaction to an asset.
 }
 ```
 
-**Validations:**
+#### **Validations:**
 - `date`: required
 - `quantity`: between -1,000,000 and +1,000,000
 - `price`: must be > 0
@@ -155,9 +154,9 @@ Add a transaction to an asset.
 
 ## 📈 Performance API
 
-GET /api/portfolios/{portfolioId}/performance?startDate=2024-01-01&endDate=2024-07-01
+### GET /api/portfolios/{portfolioId}/performance?startDate=2024-01-01&endDate=2024-07-01
 Calculates gain/loss and total value.
-**Response:**
+#### **Response:**
 ```json
 {
   "portfolioId": 1,
