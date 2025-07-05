@@ -33,16 +33,15 @@ Returns all portfolios.
 
 ### ➤ `POST /api/portfolios`
 Create a new portfolio.
-Request Body
+### Request Body
 {
   "name": "Retirement Portfolio"
 }
-Response
+### Response
 {
   "id": 2,
   "name": "Retirement Portfolio"
 }
-
 
 ## 📁 Asset API
 ### ➤ GET /api/portfolios/{portfolioId}/assets
