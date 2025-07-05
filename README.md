@@ -50,30 +50,28 @@ With query params:
 ?startDate=2024-01-01&endDate=2024-07-01
 Returns portfolio valuation, realized/unrealized gains, and asset breakdown.
 
-🛠️ Developer Notes
-🌐 Swagger UI: http://localhost:5000/swagger
-
-💾 Database: SQLite portfolio.db
-
-📦 Testable via dotnet test
-🧪 Unit test coverage for all controllers & validation
-📦 Tech Stack
-ASP.NET Core 8.0
-Entity Framework Core (SQLite/InMemory)
-xUnit for testing
+## 🛠️ Developer Notes
+### 🌐 Swagger UI: http://localhost:5000/swagger
+### 💾 Database: SQLite portfolio.db
+### 📦 Testable via dotnet test
+### 🧪 Unit test coverage for all controllers & validation
+### 📦 Tech Stack
+### ASP.NET Core 8.0
+### Entity Framework Core (SQLite/InMemory)
+### xUnit for testing
 
 Swagger for docs
 ## 📁 Project Structure
 
-PortfolioAPI_NoDTO/
-│
-├── Controllers/
-├── Models/
-├── PortfolioAPI_NoDTO.csproj
-├── Program.cs
-├── AppDbContext.cs
-├── SampleDataSeeder.cs
-├── README.md
+### PortfolioAPI_NoDTO/
+### │
+### ├── Controllers/
+### ├── Models/
+### ├── PortfolioAPI_NoDTO.csproj
+### ├── Program.cs
+### ├── AppDbContext.cs
+### ├── SampleDataSeeder.cs
+### ├── README.md
 
 
 
